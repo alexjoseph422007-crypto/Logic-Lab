@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Logic Lab - Truth Table Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🧠 Logic Lab</h1>
+        <p>Basic Connectives & Truth Tables</p>
+    </header>
+
+    <nav>
+        <a href="#learn">Learn</a>
+        <a href="#generator">Generator</a>
+        <a href="#quiz">Quiz</a>
+    </nav>
+
+    <!-- LEARN SECTION -->
+    <section id="learn">
+
+        <h2>📚 Basic Logical Connectives</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>AND ( ∧ )</h3>
+                <p>True only when both statements are true.</p>
+                <p><b>Example:</b> P ∧ Q</p>
+            </div>
+
+            <div class="card">
+                <h3>OR ( ∨ )</h3>
+                <p>True when at least one statement is true.</p>
+                <p><b>Example:</b> P ∨ Q</p>
+            </div>
+
+            <div class="card">
+                <h3>NOT ( ¬ )</h3>
+                <p>Reverses the truth value of a statement.</p>
+                <p><b>Example:</b> ¬P</p>
+            </div>
+
+            <div class="card">
+                <h3>Implication ( → )</h3>
+                <p>False only when P is true and Q is false.</p>
+                <p><b>Example:</b> P → Q</p>
+            </div>
+
+            <div class="card">
+                <h3>Biconditional ( ↔ )</h3>
+                <p>True when both statements have the same value.</p>
+                <p><b>Example:</b> P ↔ Q</p>
+            </div>
+
+            <div class="card">
+                <h3>XOR ( ⊕ )</h3>
+                <p>True when exactly one statement is true.</p>
+                <p><b>Example:</b> P ⊕ Q</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- TRUTH TABLE GENERATOR -->
+    <section id="generator">
+
+        <h2>🧮 Truth Table Generator</h2>
+
+        <label>Select Connective:</label>
+
+        <select id="connective">
+
+            <option value="AND">AND (P ∧ Q)</option>
+            <option value="OR">OR (P ∨ Q)</option>
+            <option value="NOT">NOT (¬P)</option>
+            <option value="IMPLIES">Implication (P → Q)</option>
+            <option value="IFF">Biconditional (P ↔ Q)</option>
+            <option value="XOR">XOR (P ⊕ Q)</option>
+
+        </select>
+
+        <button onclick="generateTable()">
+            Generate Truth Table
+        </button>
+
+        <div id="table-container"></div>
+
+    </section>
+
+
+   
+       
+
+       <!-- QUIZ -->
+<section id="quiz">
+
+    <h2>🎯 Logic Quiz</h2>
+
+    <div class="quiz-box">
+
+        <p id="question-number">
+            Question 1 of 5
+        </p>
+
+        <h3 id="quiz-question">
+            Loading question...
+        </h3>
+
+        <div class="answer-buttons">
+
+            <button onclick="checkAnswer(true)">
+                True
+            </button>
+
+            <button onclick="checkAnswer(false)">
+                False
+            </button>
+
+        </div>
+
+        <p id="quiz-result"></p>
+
+        <p id="score">
+            Score: 0
+        </p>
+
+        <button id="restart-button" onclick="startQuiz()">
+            🔄 Restart Quiz
+        </button>
+
+    </div>
+
+</section>
+
+
+</section>
+
+    </section>
+
+
+    <footer>
+
+        <p>Logic Lab © 2026</p>
+        <p>Learn • Calculate • Understand</p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+/* ===============================
+   GLOBAL STYLES
+================================ */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    /* Warm background */
+    background: #f7efe3;
+
+    color: #3f342b;
+
+    line-height: 1.6;
+}
+
+
+/* ===============================
+   HEADER
+================================ */
+
+header {
+    text-align: center;
+
+    padding: 50px 20px;
+
+    background: linear-gradient(
+        135deg,
+        #6f4e37,
+        #9b6b43
+    );
+
+    color: #fffaf3;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #f8e9d5;
+}
+
+
+/* ===============================
+   NAVIGATION
+================================ */
+
+nav {
+    background: #4f3929;
+
+    text-align: center;
+
+    padding: 15px;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+nav a {
+    color: #fff8ed;
+
+    text-decoration: none;
+
+    margin: 0 20px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f3c892;
+}
+
+
+/* ===============================
+   SECTIONS
+================================ */
+
+section {
+    max-width: 1000px;
+
+    margin: 50px auto;
+
+    padding: 25px;
+}
+
+section h2 {
+    text-align: center;
+
+    margin-bottom: 30px;
+
+    color: #5c4030;
+
+    font-size: 28px;
+}
+
+
+/* ===============================
+   LEARN CARDS
+================================ */
+
+.cards {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 22px;
+}
+
+.card {
+    background: #fffaf3;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    border: 1px solid #ead8c2;
+
+    box-shadow:
+        0 6px 18px rgba(92, 64, 48, 0.10);
+
+    transition: transform 0.3s,
+                box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+
+    box-shadow:
+        0 10px 25px rgba(92, 64, 48, 0.16);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+
+    color: #8a5735;
+}
+
+.card p {
+    color: #665548;
+}
+
+
+/* ===============================
+   GENERATOR
+================================ */
+
+#generator {
+    background: #fffaf3;
+
+    border-radius: 20px;
+
+    border: 1px solid #ead8c2;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px rgba(92, 64, 48, 0.10);
+}
+
+#generator label {
+    font-weight: bold;
+
+    color: #5c4030;
+}
+
+
+/* ===============================
+   SELECT
+================================ */
+
+select {
+    padding: 12px;
+
+    margin: 10px;
+
+    border-radius: 8px;
+
+    border: 1px solid #d8bea2;
+
+    background: #fffdf9;
+
+    color: #49382d;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+/* ===============================
+   BUTTONS
+================================ */
+
+button {
+    padding: 12px 20px;
+
+    margin: 10px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #c47a45;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 16px;
+
+    transition:
+        background 0.3s,
+        transform 0.2s;
+}
+
+button:hover {
+    background: #a96135;
+
+    transform: translateY(-2px);
+}
+
+
+/* ===============================
+   TRUTH TABLE
+================================ */
+
+table {
+    margin: 30px auto;
+
+    border-collapse: collapse;
+
+    min-width: 400px;
+
+    background: #fffdf9;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+}
+
+th,
+td {
+    border: 1px solid #d8c5ae;
+
+    padding: 12px 25px;
+
+    text-align: center;
+}
+
+th {
+    background: #ead7c0;
+
+    color: #533d2d;
+}
+
+td {
+    color: #59483b;
+}
+
+
+/* ===============================
+   QUIZ
+================================ */
+
+#quiz {
+    background: #f1dfc9;
+
+    border-radius: 20px;
+
+    padding: 35px;
+
+    box-shadow:
+        0 8px 25px rgba(92, 64, 48, 0.10);
+}
+
+.quiz-box {
+    background: #fffaf3;
+
+    padding: 35px;
+
+    text-align: center;
+
+    border-radius: 18px;
+
+    border: 1px solid #ead8c2;
+
+    box-shadow:
+        0 6px 18px rgba(92, 64, 48, 0.08);
+}
+
+#question-number {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #9a633d;
+
+    margin-bottom: 18px;
+}
+
+#quiz-question {
+    font-size: 21px;
+
+    color: #4d3a2d;
+
+    margin-bottom: 20px;
+}
+
+.answer-buttons button {
+    min-width: 110px;
+}
+
+#quiz-result {
+    margin-top: 20px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+#score {
+    margin-top: 15px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    color: #6f4e37;
+}
+
+
+/* ===============================
+   RESTART BUTTON
+================================ */
+
+#restart-button {
+    background: #806044;
+
+    display: none;
+}
+
+#restart-button:hover {
+    background: #654a35;
+}
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+footer {
+    text-align: center;
+
+    padding: 35px;
+
+    background: #4f3929;
+
+    color: #f8ead8;
+
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 5px;
+}
+
+
+/* ===============================
+   MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 700px) {
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 32px;
+    }
+
+    nav a {
+        margin: 0 8px;
+    }
+
+    section {
+        margin: 30px auto;
+    }
+
+    table {
+        min-width: 300px;
+    }
+
+    #quiz {
+        padding: 20px;
+    }
+
+    .quiz-box {
+        padding: 25px 15px;
+    }
+}
