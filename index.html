@@ -34,73 +34,86 @@
 
         <div class="cards">
 
+
             <!-- AND -->
             <div class="card">
+
                 <h3>AND Gate ( ∧ )</h3>
 
                 <p>
                     <b>Rule:</b> The output is 1 only if
-                    <b>all inputs</b> are 1. Otherwise, the output is 0.
+                    <b>all inputs are 1</b>. Otherwise, the output is 0.
                 </p>
 
                 <p>
-                    <b>Example:</b> Like two safety switches in a machine;
-                    both switch A <b>and</b> switch B must be turned on
-                    to run the motor.
+                    <b>Real-world example:</b>
+                    A car starts only when the
+                    <b>key is turned AND the brake pedal is pressed</b>.
+                    Both conditions must be satisfied for the car to start.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = A ⋅ B
                 </p>
+
             </div>
 
 
             <!-- OR -->
             <div class="card">
+
                 <h3>OR Gate ( ∨ )</h3>
 
                 <p>
                     <b>Rule:</b> The output is 1 if
-                    <b>at least one input</b> is 1.
+                    <b>at least one input is 1</b>.
                     The output is 0 only when all inputs are 0.
                 </p>
 
                 <p>
-                    <b>Example:</b> A warning system has two sensors.
-                    If <b>sensor A or sensor B</b> detects danger,
-                    the warning alarm turns on.
+                    <b>Real-world example:</b>
+                    A security alarm activates when the
+                    <b>door sensor OR window sensor</b>
+                    detects an intrusion.
+                    Either sensor can activate the alarm.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = A + B
                 </p>
+
             </div>
 
 
             <!-- NOT -->
             <div class="card">
+
                 <h3>NOT Gate ( ¬ )</h3>
 
                 <p>
                     <b>Rule:</b> The output is the
-                    <b>opposite</b> of the input.
-                    If the input is 1, the output is 0, and vice versa.
+                    <b>opposite of the input</b>.
+                    If the input is 1, the output is 0,
+                    and vice versa.
                 </p>
 
                 <p>
-                    <b>Example:</b> An automatic light turns on when
-                    it detects that it is <b>not daytime</b>.
-                    If the daytime signal is 1, the light output is 0.
+                    <b>Real-world example:</b>
+                    An automatic street light turns
+                    <b>ON when daylight is NOT detected</b>.
+                    When daylight is detected, the light turns OFF.
                 </p>
 
                 <p>
-                    <b>Formula:</b> X = Ā
+                    <b>Formula:</b> X = ¬A
                 </p>
+
             </div>
 
 
             <!-- IMPLICATION -->
             <div class="card">
+
                 <h3>Implication ( → )</h3>
 
                 <p>
@@ -110,20 +123,23 @@
                 </p>
 
                 <p>
-                    <b>Example:</b> If a student submits an assignment,
-                    then the system records the submission.
-                    The condition is violated when the assignment is
-                    submitted but the system fails to record it.
+                    <b>Real-world example:</b>
+                    If a student <b>is present</b>,
+                    their <b>attendance should be recorded</b>.
+                    The condition fails when the student is present
+                    but their attendance is not recorded.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = A → B = ¬A + B
                 </p>
+
             </div>
 
 
             <!-- BICONDITIONAL -->
             <div class="card">
+
                 <h3>Biconditional ( ↔ )</h3>
 
                 <p>
@@ -133,63 +149,74 @@
                 </p>
 
                 <p>
-                    <b>Example:</b> A security system allows access
-                    when two authorization signals agree —
-                    both are valid or both are invalid.
+                    <b>Real-world example:</b>
+                    A security system grants access when
+                    <b>two verification checks have matching results</b>.
+                    If one check passes and the other fails,
+                    access is denied.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = A ↔ B
                 </p>
+
             </div>
 
 
             <!-- XOR -->
             <div class="card">
+
                 <h3>XOR Gate ( ⊕ )</h3>
 
                 <p>
                     <b>Rule:</b> The output is 1 when
-                    <b>exactly one input</b> is 1.
+                    <b>exactly one input is 1</b>.
                     If both inputs are the same, the output is 0.
                 </p>
 
                 <p>
-                    <b>Example:</b> A hallway light can be controlled
-                    by two switches. The light is ON when
-                    <b>exactly one switch</b> is ON.
+                    <b>Real-world example:</b>
+                    A hallway light controlled by two switches
+                    changes its state when <b>only one switch
+                    is activated</b>.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = A ⊕ B
                 </p>
+
             </div>
 
 
             <!-- NAND -->
             <div class="card">
+
                 <h3>NAND Gate ( ↑ )</h3>
 
                 <p>
                     <b>Rule:</b> The output is 0 only when
                     <b>all inputs are 1</b>.
-                    For all other input combinations, the output is 1.
+                    For every other combination, the output is 1.
                 </p>
 
                 <p>
-                    <b>Example:</b> A machine stops only when
-                    <b>both safety switches A and B</b> are activated.
+                    <b>Real-world example:</b>
+                    In an industrial machine, the safety system
+                    <b>stops the machine when both safety conditions
+                    are active</b>.
                     Otherwise, the machine remains enabled.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = ¬(A ⋅ B)
                 </p>
+
             </div>
 
 
             <!-- NOR -->
             <div class="card">
+
                 <h3>NOR Gate ( ↓ )</h3>
 
                 <p>
@@ -199,14 +226,17 @@
                 </p>
 
                 <p>
-                    <b>Example:</b> An alarm system remains active only
-                    when <b>neither sensor A nor sensor B</b> detects
-                    movement.
+                    <b>Real-world example:</b>
+                    A traffic monitoring indicator remains active
+                    when <b>neither sensor detects a vehicle</b>.
+                    If either sensor detects a vehicle,
+                    the indicator turns OFF.
                 </p>
 
                 <p>
                     <b>Formula:</b> X = ¬(A + B)
                 </p>
+
             </div>
 
         </div>
@@ -224,13 +254,30 @@
         <select id="connective">
 
             <option value="AND">AND (P ∧ Q)</option>
+
             <option value="OR">OR (P ∨ Q)</option>
+
             <option value="NOT">NOT (¬P)</option>
-            <option value="IMPLIES">Implication (P → Q)</option>
-            <option value="IFF">Biconditional (P ↔ Q)</option>
-            <option value="XOR">XOR (P ⊕ Q)</option>
-            <option value="NAND">NAND (P ↑ Q)</option>
-            <option value="NOR">NOR (P ↓ Q)</option>
+
+            <option value="IMPLIES">
+                Implication (P → Q)
+            </option>
+
+            <option value="IFF">
+                Biconditional (P ↔ Q)
+            </option>
+
+            <option value="XOR">
+                XOR (P ⊕ Q)
+            </option>
+
+            <option value="NAND">
+                NAND (P ↑ Q)
+            </option>
+
+            <option value="NOR">
+                NOR (P ↓ Q)
+            </option>
 
         </select>
 
@@ -260,6 +307,7 @@
                 Loading question...
             </h3>
 
+
             <div class="answer-buttons">
 
                 <button onclick="checkAnswer(true)">
@@ -272,14 +320,20 @@
 
             </div>
 
+
             <p id="quiz-result"></p>
+
 
             <p id="score">
                 Score: 0
             </p>
 
-            <button id="restart-button" onclick="startQuiz()">
+
+            <button id="restart-button"
+                    onclick="startQuiz()">
+
                 🔄 Restart Quiz
+
             </button>
 
         </div>
