@@ -36,180 +36,177 @@
 
             <!-- AND -->
             <div class="card">
-
-                <h3>AND ( ∧ )</h3>
+                <h3>AND Gate ( ∧ )</h3>
 
                 <p>
-                    AND is true only when both statements are true.
+                    <b>Rule:</b> The output is 1 only if
+                    <b>all inputs</b> are 1. Otherwise, the output is 0.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P ∧ Q
+                    <b>Example:</b> Like two safety switches in a machine;
+                    both switch A <b>and</b> switch B must be turned on
+                    to run the motor.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True and Q = True,
-                    then P ∧ Q = True.
+                    <b>Formula:</b> X = A ⋅ B
                 </p>
-
             </div>
 
 
             <!-- OR -->
             <div class="card">
-
-                <h3>OR ( ∨ )</h3>
+                <h3>OR Gate ( ∨ )</h3>
 
                 <p>
-                    OR is true when at least one of the statements is true.
+                    <b>Rule:</b> The output is 1 if
+                    <b>at least one input</b> is 1.
+                    The output is 0 only when all inputs are 0.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P ∨ Q
+                    <b>Example:</b> A warning system has two sensors.
+                    If <b>sensor A or sensor B</b> detects danger,
+                    the warning alarm turns on.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True and Q = False,
-                    then P ∨ Q = True.
+                    <b>Formula:</b> X = A + B
                 </p>
-
             </div>
 
 
             <!-- NOT -->
             <div class="card">
-
-                <h3>NOT ( ¬ )</h3>
+                <h3>NOT Gate ( ¬ )</h3>
 
                 <p>
-                    NOT reverses the truth value of a statement.
+                    <b>Rule:</b> The output is the
+                    <b>opposite</b> of the input.
+                    If the input is 1, the output is 0, and vice versa.
                 </p>
 
                 <p>
-                    <b>Formula:</b> ¬P
+                    <b>Example:</b> An automatic light turns on when
+                    it detects that it is <b>not daytime</b>.
+                    If the daytime signal is 1, the light output is 0.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True,
-                    then ¬P = False.
+                    <b>Formula:</b> X = Ā
                 </p>
-
             </div>
 
 
             <!-- IMPLICATION -->
             <div class="card">
-
                 <h3>Implication ( → )</h3>
 
                 <p>
-                    Implication is false only when P is true and Q is false.
+                    <b>Rule:</b> The output is 0 only when
+                    <b>A is 1 and B is 0</b>.
+                    In all other cases, the output is 1.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P → Q
+                    <b>Example:</b> If a student submits an assignment,
+                    then the system records the submission.
+                    The condition is violated when the assignment is
+                    submitted but the system fails to record it.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True and Q = False,
-                    then P → Q = False.
+                    <b>Formula:</b> X = A → B = ¬A + B
                 </p>
-
             </div>
 
 
             <!-- BICONDITIONAL -->
             <div class="card">
-
                 <h3>Biconditional ( ↔ )</h3>
 
                 <p>
-                    Biconditional is true when both statements have the same
-                    truth value.
+                    <b>Rule:</b> The output is 1 when
+                    <b>both inputs have the same value</b>.
+                    It is 0 when the inputs are different.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P ↔ Q
+                    <b>Example:</b> A security system allows access
+                    when two authorization signals agree —
+                    both are valid or both are invalid.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True and Q = True,
-                    then P ↔ Q = True.
+                    <b>Formula:</b> X = A ↔ B
                 </p>
-
             </div>
 
 
             <!-- XOR -->
             <div class="card">
-
-                <h3>XOR ( ⊕ )</h3>
+                <h3>XOR Gate ( ⊕ )</h3>
 
                 <p>
-                    XOR is true when exactly one statement is true.
+                    <b>Rule:</b> The output is 1 when
+                    <b>exactly one input</b> is 1.
+                    If both inputs are the same, the output is 0.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P ⊕ Q
+                    <b>Example:</b> A hallway light can be controlled
+                    by two switches. The light is ON when
+                    <b>exactly one switch</b> is ON.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True and Q = False,
-                    then P ⊕ Q = True.
+                    <b>Formula:</b> X = A ⊕ B
                 </p>
-
             </div>
 
 
             <!-- NAND -->
             <div class="card">
-
-                <h3>NAND ( ↑ )</h3>
+                <h3>NAND Gate ( ↑ )</h3>
 
                 <p>
-                    NAND is the negation of the AND operation.
-                    It is false only when both statements are true.
+                    <b>Rule:</b> The output is 0 only when
+                    <b>all inputs are 1</b>.
+                    For all other input combinations, the output is 1.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P ↑ Q = ¬(P ∧ Q)
+                    <b>Example:</b> A machine stops only when
+                    <b>both safety switches A and B</b> are activated.
+                    Otherwise, the machine remains enabled.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = True and Q = True,
-                    then P ↑ Q = False.
+                    <b>Formula:</b> X = ¬(A ⋅ B)
                 </p>
-
             </div>
 
 
             <!-- NOR -->
             <div class="card">
-
-                <h3>NOR ( ↓ )</h3>
+                <h3>NOR Gate ( ↓ )</h3>
 
                 <p>
-                    NOR is the negation of the OR operation.
-                    It is true only when both statements are false.
+                    <b>Rule:</b> The output is 1 only when
+                    <b>all inputs are 0</b>.
+                    If any input is 1, the output is 0.
                 </p>
 
                 <p>
-                    <b>Formula:</b> P ↓ Q = ¬(P ∨ Q)
+                    <b>Example:</b> An alarm system remains active only
+                    when <b>neither sensor A nor sensor B</b> detects
+                    movement.
                 </p>
 
                 <p>
-                    <b>Example:</b>
-                    If P = False and Q = False,
-                    then P ↓ Q = True.
+                    <b>Formula:</b> X = ¬(A + B)
                 </p>
-
             </div>
 
         </div>
@@ -227,19 +224,12 @@
         <select id="connective">
 
             <option value="AND">AND (P ∧ Q)</option>
-
             <option value="OR">OR (P ∨ Q)</option>
-
             <option value="NOT">NOT (¬P)</option>
-
             <option value="IMPLIES">Implication (P → Q)</option>
-
             <option value="IFF">Biconditional (P ↔ Q)</option>
-
             <option value="XOR">XOR (P ⊕ Q)</option>
-
             <option value="NAND">NAND (P ↑ Q)</option>
-
             <option value="NOR">NOR (P ↓ Q)</option>
 
         </select>
