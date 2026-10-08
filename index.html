@@ -12,16 +12,20 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <h1>🧠 Logic Lab</h1>
         <p>Basic Connectives & Truth Tables</p>
     </header>
 
+
+    <!-- NAVIGATION -->
     <nav>
         <a href="#learn">Learn</a>
         <a href="#generator">Generator</a>
         <a href="#quiz">Quiz</a>
     </nav>
+
 
     <!-- LEARN SECTION -->
     <section id="learn">
@@ -30,40 +34,182 @@
 
         <div class="cards">
 
+            <!-- AND -->
             <div class="card">
+
                 <h3>AND ( ∧ )</h3>
-                <p>True only when both statements are true.</p>
-                <p><b>Example:</b> P ∧ Q</p>
+
+                <p>
+                    AND is true only when both statements are true.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P ∧ Q
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True and Q = True,
+                    then P ∧ Q = True.
+                </p>
+
             </div>
 
+
+            <!-- OR -->
             <div class="card">
+
                 <h3>OR ( ∨ )</h3>
-                <p>True when at least one statement is true.</p>
-                <p><b>Example:</b> P ∨ Q</p>
+
+                <p>
+                    OR is true when at least one of the statements is true.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P ∨ Q
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True and Q = False,
+                    then P ∨ Q = True.
+                </p>
+
             </div>
 
+
+            <!-- NOT -->
             <div class="card">
+
                 <h3>NOT ( ¬ )</h3>
-                <p>Reverses the truth value of a statement.</p>
-                <p><b>Example:</b> ¬P</p>
+
+                <p>
+                    NOT reverses the truth value of a statement.
+                </p>
+
+                <p>
+                    <b>Formula:</b> ¬P
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True,
+                    then ¬P = False.
+                </p>
+
             </div>
 
+
+            <!-- IMPLICATION -->
             <div class="card">
+
                 <h3>Implication ( → )</h3>
-                <p>False only when P is true and Q is false.</p>
-                <p><b>Example:</b> P → Q</p>
+
+                <p>
+                    Implication is false only when P is true and Q is false.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P → Q
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True and Q = False,
+                    then P → Q = False.
+                </p>
+
             </div>
 
+
+            <!-- BICONDITIONAL -->
             <div class="card">
+
                 <h3>Biconditional ( ↔ )</h3>
-                <p>True when both statements have the same value.</p>
-                <p><b>Example:</b> P ↔ Q</p>
+
+                <p>
+                    Biconditional is true when both statements have the same
+                    truth value.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P ↔ Q
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True and Q = True,
+                    then P ↔ Q = True.
+                </p>
+
             </div>
 
+
+            <!-- XOR -->
             <div class="card">
+
                 <h3>XOR ( ⊕ )</h3>
-                <p>True when exactly one statement is true.</p>
-                <p><b>Example:</b> P ⊕ Q</p>
+
+                <p>
+                    XOR is true when exactly one statement is true.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P ⊕ Q
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True and Q = False,
+                    then P ⊕ Q = True.
+                </p>
+
+            </div>
+
+
+            <!-- NAND -->
+            <div class="card">
+
+                <h3>NAND ( ↑ )</h3>
+
+                <p>
+                    NAND is the negation of the AND operation.
+                    It is false only when both statements are true.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P ↑ Q = ¬(P ∧ Q)
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = True and Q = True,
+                    then P ↑ Q = False.
+                </p>
+
+            </div>
+
+
+            <!-- NOR -->
+            <div class="card">
+
+                <h3>NOR ( ↓ )</h3>
+
+                <p>
+                    NOR is the negation of the OR operation.
+                    It is true only when both statements are false.
+                </p>
+
+                <p>
+                    <b>Formula:</b> P ↓ Q = ¬(P ∨ Q)
+                </p>
+
+                <p>
+                    <b>Example:</b>
+                    If P = False and Q = False,
+                    then P ↓ Q = True.
+                </p>
+
             </div>
 
         </div>
@@ -81,77 +227,84 @@
         <select id="connective">
 
             <option value="AND">AND (P ∧ Q)</option>
+
             <option value="OR">OR (P ∨ Q)</option>
+
             <option value="NOT">NOT (¬P)</option>
+
             <option value="IMPLIES">Implication (P → Q)</option>
+
             <option value="IFF">Biconditional (P ↔ Q)</option>
+
             <option value="XOR">XOR (P ⊕ Q)</option>
 
+            <option value="NAND">NAND (P ↑ Q)</option>
+
+            <option value="NOR">NOR (P ↓ Q)</option>
+
         </select>
+
 
         <button onclick="generateTable()">
             Generate Truth Table
         </button>
+
 
         <div id="table-container"></div>
 
     </section>
 
 
-   
-       
+    <!-- QUIZ -->
+    <section id="quiz">
 
-       <!-- QUIZ -->
-<section id="quiz">
+        <h2>🎯 Logic Quiz</h2>
 
-    <h2>🎯 Logic Quiz</h2>
+        <div class="quiz-box">
 
-    <div class="quiz-box">
+            <p id="question-number">
+                Question 1 of 5
+            </p>
 
-        <p id="question-number">
-            Question 1 of 5
-        </p>
+            <h3 id="quiz-question">
+                Loading question...
+            </h3>
 
-        <h3 id="quiz-question">
-            Loading question...
-        </h3>
+            <div class="answer-buttons">
 
-        <div class="answer-buttons">
+                <button onclick="checkAnswer(true)">
+                    True
+                </button>
 
-            <button onclick="checkAnswer(true)">
-                True
-            </button>
+                <button onclick="checkAnswer(false)">
+                    False
+                </button>
 
-            <button onclick="checkAnswer(false)">
-                False
+            </div>
+
+            <p id="quiz-result"></p>
+
+            <p id="score">
+                Score: 0
+            </p>
+
+            <button id="restart-button" onclick="startQuiz()">
+                🔄 Restart Quiz
             </button>
 
         </div>
 
-        <p id="quiz-result"></p>
-
-        <p id="score">
-            Score: 0
-        </p>
-
-        <button id="restart-button" onclick="startQuiz()">
-            🔄 Restart Quiz
-        </button>
-
-    </div>
-
-</section>
-
-
-</section>
-
     </section>
 
 
+    <!-- FOOTER -->
     <footer>
 
         <p>Logic Lab © 2026</p>
-        <p>Learn • Calculate • Understand</p>
+
+        <p>
+            Learn • Calculate • Understand
+        </p>
 
     </footer>
 
